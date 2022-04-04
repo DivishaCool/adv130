@@ -1,0 +1,128 @@
+body{
+    background-image: url("bg2.jpg");
+    height: 100%;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading{
+font-size: 23px;
+margin: 0;
+width:100%;
+background-color: white;
+color:white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+box-shadow: 10px , 10px , 10px , gray;
+color: black;
+}
+
+.note{
+    font-size: 15px;
+    color:black;
+}
+
+.div_speed{
+    float: left;
+}
+
+.disk_speed_img{
+    width: 200px;
+    border-radius: 100px;
+}
+
+#speed{
+    font-size: 23px;
+    margin: 15px;
+}
+
+.div_volume{
+    float: right;
+}
+
+.disk_volume_img{
+    width:200px;
+    border-radius: 100px;
+}
+
+#volume{
+    font-size: 23px;
+    margin: 15px;
+}
+
+#song_name{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgb(13, 118, 255);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#song_name:hover {background-color: #1368d6}
+
+#song_name:active {
+  background-color: #1368d6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+ 
+
+ 
+  
+
+  #notice{
+      color:white;
+  }
+
+  canvas{
+    border: 5px  ridge white;
+    margin-top: 140px;
+  }
